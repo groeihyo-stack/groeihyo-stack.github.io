@@ -81,6 +81,39 @@
   .chips li { font-size: 14px; font-weight: 500; padding: 6px 13px; border: 1px solid var(--rule-strong); background: var(--surface); border-radius: 999px; }
   .chip-soon { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); border: 1px solid var(--rule-strong); border-radius: 999px; padding: 4px 13px; }
   footer { margin-top: 44px; padding-top: 18px; border-top: 2px solid var(--ink); font-size: 13px; color: var(--ink-faint); }
+  /* neighborhood guide */
+  .jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0 0; padding: 0; list-style: none; }
+  .jump a { display: block; font-size: 14px; font-weight: 500; padding: 6px 14px; border: 1px solid var(--rule-strong); background: var(--surface); border-radius: 999px; color: var(--ink); text-decoration: none; }
+  .jump a:hover, .jump a:focus-visible { border-color: var(--accent); color: var(--accent); }
+  h3.cat { margin: 40px 0 0; padding-top: 18px; border-top: 2px solid var(--ink); }
+  .place { margin: 22px 0 0; background: var(--surface); border: 1px solid var(--rule); }
+  .place-photo { margin: 0; border-bottom: 1px solid var(--rule); }
+  .place-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: var(--rule); }
+  .place-photo img.y10 { object-position: 50% 10%; } .place-photo img.y25 { object-position: 50% 25%; } .place-photo img.y30 { object-position: 50% 30%; }
+  .place-photo img.y35 { object-position: 50% 35%; } .place-photo img.y45 { object-position: 50% 45%; } .place-photo img.y70 { object-position: 50% 70%; }
+  .place-photo figcaption { padding: 5px 18px; font-size: 11px; line-height: 1.4; color: var(--ink-soft); }
+  .place-body { padding: 18px 18px 20px; }
+  .place-head { display: flex; align-items: flex-start; gap: 12px; }
+  .place-num { flex: none; min-width: 30px; height: 30px; padding: 0 6px; display: grid; place-items: center; font-size: 13px; font-weight: 600; background: var(--seal); color: var(--paper); margin-top: 2px; }
+  .place-num-walk { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+  .place-name { margin: 0; font-family: var(--display); font-weight: 600; font-size: 21px; line-height: 1.3; text-wrap: balance; }
+  .place-ko { display: inline-block; font-family: var(--body); font-size: 15px; font-weight: 600; color: var(--ink-soft); }
+  .place-meta { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 12px 0 0; font-size: 13.5px; color: var(--ink-soft); }
+  .place-meta b { font-weight: 600; color: var(--ink); margin-right: 4px; }
+  .place-facts { margin: 14px 0 0; }
+  .place-facts > div { padding: 12px 0; border-top: 1px solid var(--rule); }
+  .place-facts dt { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin: 0 0 4px; }
+  .place-facts dd { margin: 0; font-size: 15.5px; line-height: 1.62; }
+  .place-story dd { font-size: 16.5px; line-height: 1.68; }
+  .say-ko { display: block; font-size: 20px; font-weight: 600; line-height: 1.4; }
+  .say-en { display: block; margin-top: 2px; font-size: 13px; color: var(--ink-soft); }
+  .place-map { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 6px 0 0; }
+  .place-map span { font-size: 12.5px; color: var(--ink-soft); }
+  a.btn-map { display: inline-block; font-size: 14px; font-weight: 600; color: var(--paper); background: var(--seal); padding: 10px 18px; text-decoration: none; }
+  a.btn-map:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .place-src { margin-top: 14px; font-size: 12.5px; line-height: 1.55; color: var(--ink-soft); }
+  .place-src summary { cursor: pointer; font-weight: 600; letter-spacing: 0.04em; }
+  .place-src p { margin: 6px 0 0; overflow-wrap: anywhere; }
 </style></head><body>
 <nav class="top" aria-label="Sections"><div class="in">
   <a href="#getting-here">Getting here</a><a href="#your-stay">Your stay</a><a href="#neighborhood">Neighborhood</a>
@@ -150,9 +183,229 @@
 
   <section class="part" id="neighborhood">
     <p class="part-label">3</p>
-    <h2>10 places nearby, and the people behind them</h2>
-    <p>Our neighborhood guide is on its way. Until then, message us what you feel like — a meal, a bar, or a quiet walk — and we'll pick a place.</p>
-    <span class="chip-soon">Coming soon</span>
+    <h2>11 places nearby, and the people behind them</h2>
+    <p>Itaewon grew up around the foreign communities that settled near the US military base standing beside it since the 1940s. A German chef, two friends from South Africa, a pitmaster raised in Alabama, and three Texans who once ran a taco truck all arrived in this neighborhood and stayed — some for over a decade, one for more than fifty years. Itaewon Foreign Bookstore has been run by the same family since 1973, when its founder was still selling English-language books from a handcart. Seoul's vegan food scene has roots here too: Plant Cafe Seoul grew out of a blog its founder started while learning to cook without meat. The eleven places in this guide are the ones we could confirm through interviews and public records, told through the people who run them.</p>
+    <ul class="jump" aria-label="Jump to a category"><li><a href="#morning">Morning</a></li><li><a href="#meals">Meals</a></li><li><a href="#night">Night</a></li><li><a href="#coffee">Coffee</a></li><li><a href="#shops">Shops</a></li><li><a href="#walks">Walks</a></li></ul>
+
+    <h3 class="cat" id="morning">Morning</h3>
+<article class="place" id="place-1">
+  <figure class="place-photo"><img src="img/bakers-table.jpg" width="640" height="840" alt="Window-side tables and stools inside The Baker&#x27;s Table, with the shop name on the glass" loading="lazy" decoding="async" class="y35"><figcaption>Photo: Google Maps</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">1</span><h4 class="place-name">The Baker's Table <span class="place-ko" lang="ko">더 베이커스 테이블</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Breakfast · German bread</span><span><b>Walk from UMMU</b> 12 min · 780 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>244-1 Noksapyeong-daero <span class="place-ko" lang="ko">(녹사평대로 244-1)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Micha Richter, a German chef, first came to Seoul on assignment at a five-star hotel and has now lived in the city for 25 years. Every Christmas season he bakes stollen using the recipe his father and grandfather made, marinating the dried fruit in rum and watching the dough's temperature and consistency by hand. As he told the Korea JoongAng Daily, rushing the process or skimping on the butter, candied fruit, raisins, rum, flour, and spices misses what makes a stollen right.</dd></div>
+      <div><dt>Order this</dt><dd>German breads — Hard Roll, Bretzel, Vollkorn (whole-grain loaf); stollen in the Christmas season.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">슈톨렌 있어요?</span><span class="say-en"><i>Syutollen isseoyo?</i> · Do you have stollen?</span></dd></div>
+      <div><dt>Good to know</dt><dd>The breakfast spot near the house. Stollen is seasonal (December).</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=16063510738961296870" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Korea JoongAng Daily (Christmas-season article), <a href="https://www.koreajoongangdaily.com/lifestyle/german-stollen-has-stolen-the-hearts-of-koreans-this-christmas-season/10511257" target="_blank" rel="noopener">https://www.koreajoongangdaily.com/lifestyle/german-stollen-has-stolen-the-hearts-of-koreans-this-christmas-season/10511257</a> ; shop information: thebakerstable.co.kr</p></details>
+  </div>
+</article>
+<article class="place" id="place-2">
+  <figure class="place-photo"><img src="img/plant.jpg" width="384" height="413" alt="Sunlit seating, hanging plants and framed pictures inside Plant Cafe Seoul" loading="lazy" decoding="async" class="y35"><figcaption>Photo: plantcafeseoul.com</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">2</span><h4 class="place-name">Plant Cafe Seoul <span class="place-ko" lang="ko">플랜트 이태원점</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Brunch · Vegan</span><span><b>Walk from UMMU</b> 12 min · 720 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>2F, 117 Bogwang-ro <span class="place-ko" lang="ko">(보광로 117 2층)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Mipa Lee grew up moving between the United States, the United Kingdom, Ghana, and Côte d'Ivoire before settling in Seoul. In 2009 she started a blog, Alien's Day Out, to document going vegan — first for environmental reasons, and then, as she learned more about factory farming, for animal welfare as well. She opened Plant in 2013, after first baking and selling vegan goods on her own, and the cafe marked its tenth year in 2023.</dd></div>
+      <div><dt>Order this</dt><dd>Hummus tempeh salad bowl, mushroom burger, truffle mushroom cream pasta, and a slice of vegan cake.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">메뉴 추천해 주세요</span><span class="say-en"><i>Menyu chucheonhae juseyo</i> · Could you recommend something?</span></dd></div>
+      <div><dt>Good to know</dt><dd>Second floor, a 2-minute walk from Itaewon Station Exit 4. The menu is entirely vegan; closed on Mondays.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=13250703489899381877" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Interview, seoulbrandproject.tumblr.com (Everyone's Seoul), c. 2015, <a href="https://seoulbrandproject.tumblr.com/post/127714544877/interview-with-mipa-kim-owner-of-plant" target="_blank" rel="noopener">https://seoulbrandproject.tumblr.com/post/127714544877/interview-with-mipa-kim-owner-of-plant</a> ; Korea Times Restaurant of the Week, 2023</p></details>
+  </div>
+</article>
+
+    <h3 class="cat" id="meals">Meals</h3>
+<article class="place" id="place-3">
+  <figure class="place-photo"><img src="img/mr-ahn.jpg" width="900" height="900" alt="A long communal table with yellow flowers under a carved wooden sculpture at Mr. Ahn&#x27;s Makgeolli" loading="lazy" decoding="async" class="y25"><figcaption>Photo: Google Maps</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">3</span><h4 class="place-name">Mr. Ahn's Makgeolli <span class="place-ko" lang="ko">한국술집 안씨막걸리</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Dinner · Korean food &amp; rice wine</span><span><b>Walk from UMMU</b> 11 min · 700 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>1F, 3 Hoenamu-ro <span class="place-ko" lang="ko">(회나무로 3 아름누리빌딩 1층)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Ahn Sang-hyun had no restaurant experience — he had worked in consulting, at the e-commerce company TMON, and in politics — before opening a Korean rice-wine restaurant. He has said the idea came after roughly two years of drinking almost every night, when he discovered high-end Korean liquor and decided to brew and sell his own craft makgeolli. The first year and a half were hard enough that he lived in a single room above the shop and then in a cheap basement room, and it took him 18 months to reach 30 million won in monthly sales.</dd></div>
+      <div><dt>Order this</dt><dd>The house-brewed makgeolli, with tofu platter (두부한상), squid sundae (한치순대), or grilled rice cake (가래떡구이) to finish.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">막걸리 한 병 주세요</span><span class="say-en"><i>Makgeolli han byeong juseyo</i> · One bottle of makgeolli, please</span></dd></div>
+      <div><dt>Good to know</dt><dd>Dinner only. Enter through the wooden door next to Starbucks. Listed in the Michelin Guide Seoul 2026; book ahead on Catchtable or Naver — when it's full, tables are limited to two hours.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=8175176985865071436" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>PPSS (ppss.kr) interview, 2017, <a href="http://www.ppss.kr/news/articleView.html?idxno=113958" target="_blank" rel="noopener">http://www.ppss.kr/news/articleView.html?idxno=113958</a></p></details>
+  </div>
+</article>
+<article class="place" id="place-4">
+  <figure class="place-photo"><img src="img/linus.jpg" width="900" height="900" alt="The glowing BBQ sign and wooden direction signs outside Linus BBQ" loading="lazy" decoding="async" class="y10"><figcaption>Photo: Google Maps</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">4</span><h4 class="place-name">Linus BBQ <span class="place-ko" lang="ko">라이너스 바베큐</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Lunch or dinner · Southern barbecue</span><span><b>Walk from UMMU</b> 6 min · 400 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>136-13 Itaewon-ro <span class="place-ko" lang="ko">(이태원로 136-13)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Linus Kim grew up in Birmingham, Alabama, and has said that as a picky-eating kid, the pulled pork sandwich he tasted became his first favorite food. He started smoking meat on an Itaewon rooftop before opening Linus BBQ in the summer of 2014. He has described the neighborhood as the closest thing he's experienced to a village where everyone knows each other, and in 2025 he was working to support fellow small business owners after his Haebangchon branch closed.</dd></div>
+      <div><dt>Order this</dt><dd>Pulled Pork Sandwich — the dish Linus says started it all; the Original Platter (pulled pork + brisket) if you're sharing.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">풀드포크 샌드위치 하나 주세요</span><span class="say-en"><i>Pulled pork saendwichi hana juseyo</i> · One pulled pork sandwich, please</span></dd></div>
+      <div><dt>Good to know</dt><dd>Platters are built for sharing; there is a mid-afternoon kitchen break on weekdays, so check the map link before a late lunch.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=9434247523697092665" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Korea Times, "Despite facing uncertainties, barbecuer Linus Kim chips in to rally Itaewon neighborhood", 2025, <a href="https://www.koreatimes.co.kr/www/nation/2025/02/177_305591.html" target="_blank" rel="noopener">https://www.koreatimes.co.kr/www/nation/2025/02/177_305591.html</a> ; Korea Times Restaurant of the Week, 2023, <a href="https://www.koreatimes.co.kr/southkorea/globalcommunity/20231107/restaurant-of-the-week-linus-bbq-brings-smoky-flavors-to-seouls-restaurant-scene" target="_blank" rel="noopener">https://www.koreatimes.co.kr/southkorea/globalcommunity/20231107/restaurant-of-the-week-linus-bbq-brings-smoky-flavors-to-seouls-restaurant-scene</a></p></details>
+  </div>
+</article>
+<article class="place" id="place-5">
+  <figure class="place-photo"><img src="img/braai.jpg" width="1200" height="630" alt="Zebra and antelope hides on a wood-paneled wall above barrel tables at Braai Republic" loading="lazy" decoding="async"><figcaption>Photo: braairepublic.com</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">5</span><h4 class="place-name">Braai Republic <span class="place-ko" lang="ko">브라이 리퍼블릭</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Lunch or dinner · South African</span><span><b>Walk from UMMU</b> 6 min · 430 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>2F, 19 Itaewon-ro 14-gil <span class="place-ko" lang="ko">(이태원로14길 19 2층)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Roddy Bancroft and Chris Truter came to Seoul to play rugby and, in 2006, began making biltong and boerewors — South African cured meat and sausage — for themselves. They opened Braai Republic in Itaewon in 2011, and Bancroft has said he first came to Korea as an English teacher and only later realized he had ended up staying almost 20 years. As he told Forbes Africa, staying was about reciprocity: "they've looked after us here, and so we look after them."</dd></div>
+      <div><dt>Order this</dt><dd>Biltong and boerewors (South African cured meat and sausage); the Meat Platter for two (lamb chops + house sausage).</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">빌통이랑 보에르보스 주세요</span><span class="say-en"><i>Biltong-irang boereboseu juseyo</i> · Biltong and boerewors, please</span></dd></div>
+      <div><dt>Good to know</dt><dd>Second floor. Closed on Mondays; Saturday evenings are walk-in only.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=3283980440510206085" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Forbes Africa, "Food for the Seoul: A South African restaurateur's sizzling growth story in South Korea", 2022, <a href="https://www.forbesafrica.com/contrarian/2022/08/29/food-for-the-seoul-a-south-african-restaurateurs-sizzling-growth-story-in-south-korea" target="_blank" rel="noopener">https://www.forbesafrica.com/contrarian/2022/08/29/food-for-the-seoul-a-south-african-restaurateurs-sizzling-growth-story-in-south-korea</a></p></details>
+  </div>
+</article>
+<article class="place" id="place-6">
+  <figure class="place-photo"><img src="img/tongue-groove.jpg" width="675" height="900" alt="Two raw cuts of beef on a wooden board beside the grill at Tongue &amp; Groove Joint" loading="lazy" decoding="async" class="y45"><figcaption>Photo: Google Maps</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">6</span><h4 class="place-name">Tongue &amp; Groove Joint <span class="place-ko" lang="ko">텅앤그루브 조인트</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Dinner · Korean barbecue</span><span><b>Walk from UMMU</b> 12 min · 690 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>1F, 7 Bogwang-ro 60-gil <span class="place-ko" lang="ko">(보광로60길 7 1층)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Yoo Ji-young opened Tongue &amp; Groove Joint in a back alley in Itaewon in 2016, designing the boutique-style restaurant to feel avant-garde rather than like a typical barbecue place. She told the Korea Herald that the interior is built on "the properties of matters that are closest to the essence" — an idea she drew from traditional Korean woodworking and rafters — because she believes people can be fully happy with materials alone, without an exaggerated ambience. She said she envisioned a place where both customers and staff "could act like themselves without caring what others thought," adding that she doesn't believe a Korean restaurant has to be all-out Korean — "why can't a Korean restaurant play hip-hop music?"</dd></div>
+      <div><dt>Order this</dt><dd>Dry-aged hanwoo sirloin or aged pork belly, then the kimchi beef fried rice to finish.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">삼겹살이랑 양갈비 주세요</span><span class="say-en"><i>Samgyeopsal-irang yanggalbi juseyo</i> · Pork belly and lamb chops, please</span></dd></div>
+      <div><dt>Good to know</dt><dd>Staff grill the meat at your table. A 2-minute walk from Itaewon Station Exit 3; reservations on Catchtable.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=11319365872477744247" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Korea Herald, "[Herald Interview] Restaurants that sell a story", 2018-02-02, <a href="https://www.koreaherald.com/view.php?ud=20180202000194" target="_blank" rel="noopener">https://www.koreaherald.com/view.php?ud=20180202000194</a> ; Stripes Korea, "Taste of Korea: Grilled meats await at Michelin Guide-rated Tongue and Groove Joint in Seoul", 2025, <a href="https://korea.stripes.com/food-drink/taste-of-korea-grilled-meats-michelin-guide-rated-tongue-and-groove-joint-seoul.html" target="_blank" rel="noopener">https://korea.stripes.com/food-drink/taste-of-korea-grilled-meats-michelin-guide-rated-tongue-and-groove-joint-seoul.html</a></p></details>
+  </div>
+</article>
+
+    <h3 class="cat" id="night">Night</h3>
+<article class="place" id="place-7">
+  <figure class="place-photo"><img src="img/southside.jpg" width="1200" height="800" alt="Shelves of spirits and the lit Southside Parlor sign behind the bar" loading="lazy" decoding="async"><figcaption>Photo: ssp448.com</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">7</span><h4 class="place-name">Southside Parlor <span class="place-ko" lang="ko">사우스사이드 팔러</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Night · Cocktails</span><span><b>Walk from UMMU</b> 8 min · 500 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>218 Noksapyeong-daero, 1F &amp; 4F <span class="place-ko" lang="ko">(녹사평대로 218)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Robbie Nguyen, Johnny Yu, and their friend Phil ran a taco truck called Three Kings Taco Truck around Hongdae and Itaewon before opening Southside Parlor in 2013. Nguyen has said that as time went on, the three of them wanted the bar to be more than just a good cocktail bar — "we want to grow and be a good bar for the community." Marking seven years in 2020, he described the anniversary as being as much about thanking the people who had helped them stick around as about celebrating.</dd></div>
+      <div><dt>Order this</dt><dd>The cocktail list changes with the season — ask the bartender; for food, the Southside Burger or fried chicken tacos.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">여기 시그니처 칵테일 뭐예요?</span><span class="say-en"><i>Yeogi sigeuniteo kaktel mwoyeyo?</i> · What's your signature cocktail here?</span></dd></div>
+      <div><dt>Good to know</dt><dd>Closed on Mondays. No same-day reservations — walk in, or book a day ahead on Catchtable.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=3638302395883332469" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Korea Times, "Toasting 7 years, Southside Parlor stresses adaptability, community", 2020, <a href="https://www.koreatimes.co.kr/pages/article.asp?newsIdx=296472" target="_blank" rel="noopener">https://www.koreatimes.co.kr/pages/article.asp?newsIdx=296472</a></p></details>
+  </div>
+</article>
+<article class="place" id="place-8">
+  <figure class="place-photo"><img src="img/nekkid.jpg" width="1200" height="800" alt="The open kitchen and dining room at Nekkid Wings, with a red neon sign on the left" loading="lazy" decoding="async"><figcaption>Photo: Google Maps</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">8</span><h4 class="place-name">NEKKID WINGS <span class="place-ko" lang="ko">네키드윙즈</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Night · Wings &amp; beer</span><span><b>Walk from UMMU</b> 6 min · 370 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>174-11 Noksapyeong-daero <span class="place-ko" lang="ko">(녹사평대로 174-11)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Jo Jun-gi worked in the food and beverage industry until 2016 before opening the wing restaurant Nekkid Wings in Itaewon. Serving Itaewon's international customers, he noticed how differently they liked their sauce, and developed a "Jindo Dog" hot sauce by adding Korean red and cheongyang chilies to a US-style hot sauce base. As he told IBK's blog in 2023, he wants Nekkid Wings to be remembered as a brand that represents Itaewon, and for the Jindo Dog hot sauce to become known worldwide.</dd></div>
+      <div><dt>Order this</dt><dd>Ten wings with two sauces (there are 14 flavors) — ask for the house Jindo Dog hot sauce.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">진돗개 핫소스로 주세요</span><span class="say-en"><i>Jindotgae hatsoseuro juseyo</i> · With Jindo Dog hot sauce, please</span></dd></div>
+      <div><dt>Good to know</dt><dd>The closest spot to the house. Mostly an evening place on weekdays.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=4821204297729652089" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>IBK Industrial Bank of Korea blog, 2023, <a href="https://blog.ibk.co.kr/2867" target="_blank" rel="noopener">https://blog.ibk.co.kr/2867</a> ; The Scoop, 2020, <a href="https://www.thescoop.co.kr/news/articleView.html?idxno=39603" target="_blank" rel="noopener">https://www.thescoop.co.kr/news/articleView.html?idxno=39603</a></p></details>
+  </div>
+</article>
+
+    <h3 class="cat" id="coffee">Coffee</h3>
+<article class="place" id="place-9">
+  <figure class="place-photo"><img src="img/hit-coffee.jpg" width="800" height="571" alt="The white corner building of Hit Coffee Roasters with its logo painted on the wall" loading="lazy" decoding="async"><figcaption>Photo: Visit Seoul</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">9</span><h4 class="place-name">Hit Coffee Roasters <span class="place-ko" lang="ko">히트커피로스터스 이태원</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Coffee by day, cocktails by night</span><span><b>Walk from UMMU</b> 11 min · 610 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>2F, 182 Itaewon-ro <span class="place-ko" lang="ko">(이태원로 182 2층)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Brothers Seo In-won, a roaster, and Seo Sang-won, a Q-grader, opened Hit Coffee Roasters in Cheonan in 2016. After showing at the 2020 Seoul Cafe Show, they kept hearing the same question from customers — whether they had a Seoul location — which pushed them to expand into the city, including the Itaewon branch. Seo In-won has said that consistency matters most in roasting, and that what he enjoys most about the work is the small talk with customers.</dd></div>
+      <div><dt>Order this</dt><dd>Filter coffee or a flat white from the house blends; after dark, the cold brew martini.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">시그니처 블렌드로 아메리카노 주세요</span><span class="say-en"><i>Sigeuniteo beullendeuro amerikano juseyo</i> · An Americano with the signature blend, please</span></dd></div>
+      <div><dt>Good to know</dt><dd>Second floor, right outside Itaewon Station Exit 3. A café by day that turns into a bar at night.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=2071903014266175413" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Bakery News, 2024-11-28, <a href="https://bakerynews.co.kr/article/1065594659585523" target="_blank" rel="noopener">https://bakerynews.co.kr/article/1065594659585523</a> ; Visit Seoul (Seoul Tourism Organization) official guide, <a href="https://english.visitseoul.net/itaewon/HIT-COFFEE-ROASTERS/ENP7lw301" target="_blank" rel="noopener">https://english.visitseoul.net/itaewon/HIT-COFFEE-ROASTERS/ENP7lw301</a></p></details>
+  </div>
+</article>
+
+    <h3 class="cat" id="shops">Shops</h3>
+<article class="place" id="place-10">
+  <figure class="place-photo"><img src="img/itaewon-books.jpg" width="678" height="900" alt="The street-front stalls of Itaewon Foreign Bookstore under its &quot;Foreign Book Store&quot; sign" loading="lazy" decoding="async" class="y30"><figcaption>Photo: Google Maps</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">10</span><h4 class="place-name">Itaewon Books (Itaewon Foreign Bookstore) <span class="place-ko" lang="ko">이태원 외국서적</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Secondhand English books</span><span><b>Walk from UMMU</b> 7 min · 400 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>1F, 208 Noksapyeong-daero <span class="place-ko" lang="ko">(녹사평대로 208 1층)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Choi Ki-woong opened Itaewon Foreign Bookstore in 1973, after years of collecting English-language books, catalogs, and magazines discarded near US military bases and selling them from a handcart since the 1960s. The shop moved to its current location in 1985, and his daughter, Choi Mi-ra, now runs it. As she told the Korea JoongAng Daily, the family almost never takes a day off, working through the year.</dd></div>
+      <div><dt>Order this</dt><dd>Secondhand English paperbacks — the range runs from used cookbooks to Virginia Woolf.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">영어책 어디 있어요?</span><span class="say-en"><i>Yeongeochaek eodi isseoyo?</i> · Where are the English books?</span></dd></div>
+      <div><dt>Good to know</dt><dd>The sign reads "Itaewon books". Closed on Wednesdays. No photos inside; designated a Seoul "Oraegage" (long-standing shop) by the city.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=18388758612747205563" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Korea JoongAng Daily, "From used cookbooks to Virginia Woolf, Seoul's independent English bookstores have you covered", <a href="https://www.koreajoongangdaily.com/lifestyle/from-used-cookbooks-to-virginia-woolf-seouls-independent-english-bookstores-have-you-covered/10255894" target="_blank" rel="noopener">https://www.koreajoongangdaily.com/lifestyle/from-used-cookbooks-to-virginia-woolf-seouls-independent-english-bookstores-have-you-covered/10255894</a></p></details>
+  </div>
+</article>
+<article class="place" id="place-11">
+  <figure class="place-photo"><img src="img/storage.jpg" width="675" height="900" alt="The shop window of Storage Book &amp; Film, with zines and books on display" loading="lazy" decoding="async" class="y70"><figcaption>Photo: Google Maps</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num" aria-hidden="true">11</span><h4 class="place-name">Storage Book &amp; Film <span class="place-ko" lang="ko">스토리지북앤필름</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Independent zines &amp; photo books</span><span><b>Walk from UMMU</b> 35 min · 1.9 km uphill (or a short taxi ride)</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>1F, 115-1 Sinheung-ro <span class="place-ko" lang="ko">(신흥로 115-1 1층)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Kang Young-gyu ran a shop selling film cameras before turning it into a bookstore, after publishing his own photo zine and finding he wanted to sell it and others like it. As he told Readers News, independent publishing lets him tell the story he wants to tell without having to consider a general readership the way mainstream publishing does. Since starting the shop in 2008, he has also organized independent-publishing events, including the Publishers' Table from 2013 to 2019.</dd></div>
+      <div><dt>Order this</dt><dd>Independent zines, photo books and postcards you won't find in big bookstores.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">독립출판물 구경할 수 있어요?</span><span class="say-en"><i>Dokrip chulpanmul gugyeonghal su isseoyo?</i> · Can I look at the independent publications?</span></dd></div>
+      <div><dt>Good to know</dt><dd>Opens in the afternoon. It's in Haebangchon, a steep 35-minute walk with stairs — take a taxi up, or pair it with the Haebangchon walk below (4 minutes from Sinheung Market).</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=14849701994924696119" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Readers News (Dokseo Sinmun), interview with Kang Young-gyu, 2017, <a href="https://www.readersnews.com/news/articleView.html?idxno=75413" target="_blank" rel="noopener">https://www.readersnews.com/news/articleView.html?idxno=75413</a></p></details>
+  </div>
+</article>
+
+    <h3 class="cat" id="walks">Walks</h3>
+<article class="place" id="walk-1">
+  <figure class="place-photo"><img src="img/bugundang.jpg" width="760" height="570" alt="N Seoul Tower lit up on Namsan at dusk, seen over the rooftops of Yongsan" loading="lazy" decoding="async"><figcaption>Photo: Seoul Metropolitan Government (Naeson-an Seoul)</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num place-num-walk" aria-hidden="true">Walk</span><h4 class="place-name">A walk next door: Itaewon Bugundang History Park <span class="place-ko" lang="ko">이태원부군당 역사공원</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> Sunset · A ten-minute stroll</span><span><b>Walk from UMMU</b> 2 min · 130 m</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>37 Noksapyeong-daero 40da-gil <span class="place-ko" lang="ko">(녹사평대로40다길 37)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>The street UMMU stands on carries an honorary name, Yu Gwan-sun-gil, after the independence activist Yu Gwan-sun, who died on September 28, 1920 and was buried in the Itaewon public cemetery. When the cemetery was moved in 1936 to make way for a Japanese military base, her remains were lost; in 2015 Yongsan-gu set up a memorial stone to her in this park, which looks out toward where the cemetery once stood. The park takes its name from the bugundang, the village shrine beside it, ringed by zelkova trees more than a hundred years old.</dd></div>
+      <div><dt>Do this</dt><dd>Go up just before sunset. The viewing deck looks out over Yongsan toward the towers of Yeouido, and after dark N Seoul Tower lights up on Namsan.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">사진 좀 찍어 주세요</span><span class="say-en"><i>Sajin jom jjigeo juseyo</i> · Could you take a photo for us?</span></dd></div>
+      <div><dt>Good to know</dt><dd>Free and open to everyone. The shrine itself stays locked except on ritual days; a memorial ceremony for Yu Gwan-sun is held here every September.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps?cid=143819226865627694" target="_blank" rel="noopener">Open in Google Maps</a><span>photos and directions</span></p>
+    <details class="place-src"><summary>Source</summary><p>Naeson-an Seoul (Seoul Metropolitan Government media), "Walking Yu Gwan-sun-gil", 2021-02-25, <a href="https://mediahub.seoul.go.kr/archives/2000624" target="_blank" rel="noopener">https://mediahub.seoul.go.kr/archives/2000624</a> ; Yongsan-gu Office press release on the 106th memorial ceremony, 2026 (yongsan.go.kr)</p></details>
+  </div>
+</article>
+<article class="place" id="walk-2">
+  <figure class="place-photo"><img src="img/haebangchon.jpg" width="760" height="506" alt="The entrance arcade of Sinheung Market in Haebangchon" loading="lazy" decoding="async"><figcaption>Photo: Seoul Metropolitan Government (Naeson-an Seoul)</figcaption></figure>
+  <div class="place-body">
+    <div class="place-head"><span class="place-num place-num-walk" aria-hidden="true">Walk</span><h4 class="place-name">A walk: Haebangchon Sinheung Market → Namsan Dulle-gil <span class="place-ko" lang="ko">해방촌 신흥시장 ~ 남산 둘레길</span></h4></div>
+    <p class="place-meta"><span><b>Best for</b> A half-day walk</span><span><b>Walk from UMMU</b> 31 min · 1.6 km uphill to Sinheung Market (or a short taxi ride)</span></p>
+    <dl class="place-facts">
+      <div><dt>Address</dt><dd>Sinheung Market — 95-9 Sinheung-ro <span class="place-ko" lang="ko">(신흥로 95-9)</span></dd></div>
+      <div class="place-story"><dt>The story</dt><dd>Haebangchon, on the slope of Namsan, takes its name from the settlers who built makeshift homes there after Korea's liberation in 1945. Sinheung Market, in the middle of the neighborhood, has operated since 1953 and today mixes old brick buildings and narrow alleys with newer local shops. From the market it's a short walk to the Huam-dong 108-step hillside elevator, and from there to Namsan Dulle-gil, a flat, car-free loop trail around the mountain that's open year-round.</dd></div>
+      <div><dt>Do this</dt><dd>Start at Sinheung Market, stop by Storage Book &amp; Film (card 11), then take the Huam-dong 108-step hillside elevator up toward the Namsan Dulle-gil trail.</dd></div>
+      <div><dt>Say this in Korean</dt><dd><span class="say-ko" lang="ko">남산 둘레길 어느 쪽이에요?</span><span class="say-en"><i>Namsan dulle-gil eoneu jjogieyo?</i> · Which way is the Namsan trail?</span></dd></div>
+      <div><dt>Good to know</dt><dd>Namsan Dulle-gil is a flat, car-free loop. The walk up from the house is steep, so going by taxi and walking back downhill is the easy way.</dd></div>
+    </dl>
+    <p class="place-map"><a class="btn-map" href="https://www.google.com/maps/search/?api=1&amp;query=Haebangchon+Sinheung+Market" target="_blank" rel="noopener">Open in Google Maps</a><span>today's hours and photos</span></p>
+    <details class="place-src"><summary>Source</summary><p>Naeson-an Seoul (Seoul Metropolitan Government media), "A first village below Namsan: Haebangchon outing course", <a href="https://mediahub.seoul.go.kr/archives/2001492" target="_blank" rel="noopener">https://mediahub.seoul.go.kr/archives/2001492</a> ; Visit Seoul (Seoul Tourism Organization) official guide, "Namsan Dulle-gil", <a href="https://english.visitseoul.net/area/Namsan-Trails/ENP9jn7zj" target="_blank" rel="noopener">https://english.visitseoul.net/area/Namsan-Trails/ENP9jn7zj</a></p></details>
+  </div>
+</article>
   </section>
 
   <footer>UMMU · Itaewon, Seoul · Updated October 2026</footer>
