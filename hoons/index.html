@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tonkatsu Near Sadang Station | Hoon's Donkatsu</title>
+<meta name="description" content="Tonkatsu 5 minutes' walk from Sadang Station Exit 11 in Seoul. A local favorite rated 4.9 on Naver Map with 1,100+ reviews. Grind your own pepper at the table.">
+<link rel="canonical" href="https://groeihyo-stack.github.io/hoons/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hoon's Donkatsu">
+<meta property="og:url" content="https://groeihyo-stack.github.io/hoons/">
+<meta property="og:title" content="Tonkatsu Near Sadang Station | Hoon's Donkatsu">
+<meta property="og:description" content="A local favorite rated 4.9 on Naver Map with 1,100+ reviews. 5 minutes' walk from Sadang Station Exit 11. Grind your own pepper at the table.">
+<meta property="og:image" content="https://groeihyo-stack.github.io/hoons/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A pepper grinder held over sliced pork loin katsu at Hoon's Donkatsu">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FBF4E6">
+<style>
+  :root {
+    --cream: #FBF4E6;
+    --cream-deep: #F3E6CC;
+    --card: #FFFDF8;
+    --ink: #3A2417;
+    --ink-soft: #6B5443;
+    --line: #E6D5B4;
+    --orange: #B8541A;
+    --orange-dark: #9A4413;
+    --orange-soft: #F7DFC4;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0; background: var(--cream); color: var(--ink);
+    font-family: var(--sans); font-size: 17px; line-height: 1.6;
+    overflow-wrap: break-word;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--orange-dark); }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 44px 0 0; scroll-margin-top: 12px; }
+  h1, h2, h3 { margin: 0; line-height: 1.2; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(34px, 9.6vw, 52px); font-weight: 800; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(26px, 6.6vw, 32px); font-weight: 800; margin-bottom: 14px; }
+  p { margin: 0 0 14px; }
+
+  /* Buttons */
+  .btn {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    min-height: 56px; padding: 12px 20px; border-radius: 14px;
+    background: var(--orange); color: #fff; text-decoration: none;
+    font-size: 18px; font-weight: 700; text-align: center;
+    box-shadow: 0 2px 0 var(--orange-dark);
+  }
+  .btn:hover { background: var(--orange-dark); }
+  .btn:focus-visible, .textlink:focus-visible, a:focus-visible { outline: 3px solid #1F6FEB; outline-offset: 3px; }
+  .btn svg { flex: none; width: 22px; height: 22px; }
+  .textlink {
+    display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px;
+    font-weight: 600; color: var(--orange-dark);
+  }
+
+  /* 1. Hero */
+  .hero { padding: 26px 0 0; }
+  .brand { margin: 0 0 12px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--orange); }
+  .lede { margin: 14px 0 2px; font-size: 19px; line-height: 1.45; font-weight: 600; }
+  .asof { margin: 0 0 18px; font-size: 13px; color: var(--ink-soft); }
+  .hero-photo { margin: 0 0 18px; border-radius: 18px; overflow: hidden; background: var(--cream-deep); }
+  .hero-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 40%; }
+  .hero-sub { text-align: center; margin-top: 4px; }
+
+  /* 2. Facts */
+  .facts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .facts li {
+    display: flex; flex-direction: column; gap: 8px; padding: 14px;
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    font-size: 16px; font-weight: 600; line-height: 1.35;
+  }
+  .facts svg { width: 26px; height: 26px; color: var(--orange); }
+  @media (min-width: 640px) { .facts { grid-template-columns: repeat(4, 1fr); } }
+
+  /* 3. Pepper */
+  .pepper-photo { margin: 0 0 16px; border-radius: 18px; overflow: hidden; background: var(--cream-deep); }
+  .pepper-photo img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; }
+  .motto { padding: 12px 16px; background: var(--orange-soft); border-radius: 12px; font-size: 16px; }
+  .motto b { font-weight: 700; }
+
+  /* 4. Reviews */
+  .quote { margin: 0 0 14px; padding: 18px 18px 14px; background: var(--card); border: 1px solid var(--line); border-left: 5px solid var(--orange); border-radius: 14px; }
+  .quote blockquote { margin: 0 0 10px; font-size: 17px; line-height: 1.55; }
+  .quote figcaption { font-size: 13px; font-weight: 600; letter-spacing: 0.02em; color: var(--ink-soft); }
+  .src { margin: 18px 0 0; padding: 16px; background: var(--cream-deep); border-radius: 14px; }
+  .src p { margin: 0 0 6px; font-size: 15px; color: var(--ink-soft); }
+  .score { margin: 8px 0 0; font-size: 22px; font-weight: 800; color: var(--ink); }
+  .score small { font-size: 14px; font-weight: 600; color: var(--ink-soft); }
+
+  /* 5. Menu */
+  .menu-note { font-size: 14px; color: var(--ink-soft); margin-bottom: 16px; }
+  .menu { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .dish { display: grid; grid-template-columns: 1fr; gap: 12px; padding: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
+  .dish.has-photo { grid-template-columns: 112px 1fr; }
+  .dish img { width: 112px; height: 112px; object-fit: cover; border-radius: 10px; background: var(--cream-deep); }
+  .dish h3 { font-size: 17px; font-weight: 700; line-height: 1.3; }
+  .dish .ko { display: block; margin-top: 2px; font-size: 13px; font-weight: 500; color: var(--ink-soft); }
+  .tag { display: inline-block; margin-right: 6px; padding: 1px 8px; border-radius: 999px; background: var(--orange); color: #fff; font-size: 11.5px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; vertical-align: 2px; }
+  .price { margin: 6px 0 4px; font-size: 18px; font-weight: 800; color: var(--orange-dark); }
+  .dish p { margin: 0; font-size: 15px; line-height: 1.45; color: var(--ink-soft); }
+  .dish .cap { margin-top: 4px; font-size: 13px; }
+
+  /* 6. Getting here */
+  .store-photo { margin: 0 0 16px; border-radius: 18px; overflow: hidden; background: var(--cream-deep); }
+  .store-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 30%; }
+  .addr { margin: 18px 0; padding: 16px; background: var(--card); border: 1px solid var(--line); border-radius: 14px; }
+  .addr .ko { margin: 0 0 4px; font-size: 20px; font-weight: 700; }
+  .addr .en { margin: 0; font-size: 16px; color: var(--ink-soft); }
+
+  /* 7. Footer */
+  footer { margin-top: 48px; padding: 28px 0 40px; background: var(--ink); color: #F3E6CC; }
+  footer p { margin: 0 0 6px; font-size: 15px; }
+  footer .name { font-size: 18px; font-weight: 700; color: #fff; }
+  footer .upd { margin-top: 12px; font-size: 13px; color: #CDB894; }
+</style>
+</head>
+<body>
+
+<!-- 1. First screen -->
+<header class="hero">
+  <div class="wrap">
+    <p class="brand">Hoon's Donkatsu &middot; Bangbae, Seoul</p>
+    <h1>Tonkatsu Near Sadang Station</h1>
+    <p class="lede">A local favorite &mdash; rated 4.9 on Naver Map with 1,100+ reviews</p>
+    <p class="asof">Naver figures as of Sep 2026</p>
+    <figure class="hero-photo">
+      <img src="img/hero-pepper-grinding.jpg" width="900" height="1198" alt="A pepper grinder held over sliced pork loin katsu on a tray" fetchpriority="high">
+    </figure>
+    <a class="btn" href="https://www.google.com/maps?cid=9698415127320763999" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+      Get Directions on Google Maps
+    </a>
+    <p class="hero-sub"><a class="textlink" href="#menu">See the menu</a></p>
+  </div>
+</header>
+
+<main>
+
+<!-- 2. Quick facts -->
+<section aria-label="Quick facts" style="padding-top:24px">
+  <div class="wrap">
+    <ul class="facts">
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13" cy="4.5" r="2"/><path d="M10 21l2-6-3-3 1-5 3 2 3 1M9 12l-2 3M12 15l3 2 1 4"/></svg>
+        <span>5 min walk from Sadang Station Exit 11</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <span>Open 11:00&ndash;20:30, no afternoon break</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17M10 13.5l4 4M14 13.5l-4 4"/></svg>
+        <span>Closed Tuesdays</span>
+      </li>
+      <li>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 3v8a2 2 0 0 0 2 2v8M5 3v6M9 3v6M16 21V3c-2 1-3.5 4-3.5 8 0 1.5 1.5 2 3.5 2"/></svg>
+        <span>Dine-in &amp; takeout</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- 3. Pepper -->
+<section id="pepper">
+  <div class="wrap">
+    <h2>Grind your own pepper</h2>
+    <figure class="pepper-photo">
+      <img src="img/pepper-grinder.jpg" width="900" height="900" loading="lazy" alt="Close-up of a pepper grinder over sliced katsu, with sesame sauce and wasabi on the side">
+    </figure>
+    <p>Every table is set with pepper grinders. Grind the pepper fresh over your katsu and season it the way you like.</p>
+    <p class="motto">The shop's motto, in Korean: <b>후추만 뿌려도 맛있는 돈까스</b> &mdash; &ldquo;tonkatsu that's delicious with just pepper.&rdquo;</p>
+  </div>
+</section>
+
+<!-- 4. Reviews -->
+<section id="reviews">
+  <div class="wrap">
+    <h2>Why locals keep coming back</h2>
+
+    <figure class="quote">
+      <blockquote>&ldquo;I totally agree with &lsquo;delicious with just pepper.&rsquo; The katsu itself is such good quality that, with no off smell at all, plain pepper goes perfectly with it. [&hellip;] Crispy outside, juicy inside &mdash; done right!!&rdquo;</blockquote>
+      <figcaption>Naver visitor review &middot; visited Jul 2026</figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>&ldquo;I come to Hoon's Donkatsu at least twice a week! It's close to Sadang Station so it's easy to get to, and above all the katsu is so good. [&hellip;] The staff are always kind, so I leave feeling happy.&rdquo;</blockquote>
+      <figcaption>Naver visitor review &middot; visited Aug 2026</figcaption>
+    </figure>
+
+    <figure class="quote">
+      <blockquote>&ldquo;This is where I always go when I eat alone! The owner is kind, too. The atmosphere is cozy, so I stop by often!!&rdquo;</blockquote>
+      <figcaption>Naver visitor review &middot; visited Sep 2026</figcaption>
+    </figure>
+
+    <div class="src">
+      <p>Translated from Korean reviews on Naver Map, a map app popular in Korea. Some lines are shortened with [&hellip;].</p>
+      <a class="textlink" href="https://m.place.naver.com/restaurant/1881941743/home" rel="noopener">See Hoon's on Naver Map</a>
+      <p class="score">4.9 &middot; 1,137 reviews <small>(Sep 2026)</small></p>
+    </div>
+  </div>
+</section>
+
+<!-- 5. Menu -->
+<section id="menu">
+  <div class="wrap">
+    <h2>Menu</h2>
+    <p class="menu-note">Prices in Korean won (&#8361;), as listed on Naver Map (updated Sep 2026).</p>
+    <ul class="menu">
+
+      <li class="dish">
+        <div>
+          <h3><span class="tag">Signature</span>Loin Katsu + Soy-Glazed Chicken Tenders<span class="ko">등심+간장 구름닭안심</span></h3>
+          <p class="price">&#8361;15,000</p>
+          <p>Thick, juicy pork loin katsu with fluffy chicken-tender katsu in our house soy sauce simmered with lemon and ginger.</p>
+        </div>
+      </li>
+
+      <li class="dish">
+        <div>
+          <h3><span class="tag">Signature</span>Cheese Katsu + Soy-Glazed Chicken Tenders<span class="ko">치즈+간장 구름닭안심</span></h3>
+          <p class="price">&#8361;16,000</p>
+          <p>Mozzarella-stuffed pork katsu with soy-glazed chicken-tender katsu.</p>
+        </div>
+      </li>
+
+      <li class="dish">
+        <div>
+          <h3>Loin &amp; Chicken Tender Katsu Set<span class="ko">등심 안심 정식</span></h3>
+          <p class="price">&#8361;14,000</p>
+          <p>Pork loin katsu and chicken-tender katsu set.</p>
+        </div>
+      </li>
+
+      <li class="dish">
+        <div>
+          <h3>Cheese &amp; Chicken Tender Katsu Set<span class="ko">치즈 안심 정식</span></h3>
+          <p class="price">&#8361;15,000</p>
+          <p>Cheese katsu and chicken-tender katsu set.</p>
+        </div>
+      </li>
+
+      <li class="dish has-photo">
+        <img src="img/menu-cheese-shrimp-set.jpg" width="560" height="543" loading="lazy" alt="Cheese katsu cut to show the melted cheese, served with a large fried shrimp, rice and salad">
+        <div>
+          <h3>Cheese Katsu &amp; Fried Shrimp Set<span class="ko">치즈 새우 정식</span></h3>
+          <p class="price">&#8361;15,900</p>
+          <p>Mozzarella cheese katsu with extra-large fried shrimp.</p>
+        </div>
+      </li>
+
+      <li class="dish has-photo">
+        <img src="img/menu-hot-udon-set.jpg" width="560" height="560" loading="lazy" alt="A bowl of hot udon in soy broth next to a plate of sliced pork loin katsu">
+        <div>
+          <h3>Hot Udon &amp; Loin Katsu Set<span class="ko">가락우동 정식</span></h3>
+          <p class="price">&#8361;15,000</p>
+          <p>Hot udon in aged-soy broth with pork loin katsu.</p>
+        </div>
+      </li>
+
+      <li class="dish has-photo">
+        <img src="img/menu-cold-soba-set.jpg" width="560" height="560" loading="lazy" alt="Cold buckwheat noodles in a chilled broth with lime slices and grated radish, next to sliced pork loin katsu">
+        <div>
+          <h3>Cold Buckwheat Noodle &amp; Loin Katsu Set<span class="ko">냉모밀 정식</span></h3>
+          <p class="price">&#8361;15,000</p>
+          <p>Cold buckwheat noodles in icy broth with pork loin katsu.</p>
+        </div>
+      </li>
+
+      <li class="dish has-photo">
+        <img src="img/menu-spicy-cold-udon.jpg" width="560" height="560" loading="lazy" alt="Spicy cold udon with chili flakes and lime in an icy broth, shown with a side of sliced pork loin katsu">
+        <div>
+          <h3>Spicy Cold Udon<span class="ko">땡초냉우동</span></h3>
+          <p class="price">&#8361;9,500</p>
+          <p>Spicy cold udon with chili flakes in icy broth.</p>
+          <p class="cap">Photo shows the udon with a side of loin katsu.</p>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+</section>
+
+<!-- 6. Getting here -->
+<section id="directions">
+  <div class="wrap">
+    <h2>Getting here</h2>
+    <figure class="store-photo">
+      <img src="img/storefront.jpg" width="900" height="1108" loading="lazy" alt="The cream and orange storefront of Hoon's Donkatsu with the Hoon's sign above an open front and wooden stools outside">
+    </figure>
+    <p>From Sadang Station (Lines 2 &amp; 4) Exit 11 it is about 280 m, roughly a 5-minute walk. Hoon's is on the ground floor of Bangbaecheon-ro, between Sadang and Isu stations.</p>
+    <p>Look for the cream and orange storefront with the Hoon's sign. There is no parking at the shop.</p>
+    <div class="addr">
+      <p class="ko">서울 서초구 방배천로 42 1층</p>
+      <p class="en">42 Bangbaecheon-ro, 1F, Seocho-gu, Seoul 06691</p>
+    </div>
+    <a class="btn" href="https://www.google.com/maps?cid=9698415127320763999" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+      Get Directions on Google Maps
+    </a>
+  </div>
+</section>
+
+</main>
+
+<!-- 7. Footer -->
+<footer>
+  <div class="wrap">
+    <p class="name">Hoon's Donkatsu (훈스돈까스 방배직영점)</p>
+    <p>Open 11:00&ndash;20:30</p>
+    <p>Closed Tuesdays</p>
+    <p class="upd">Last updated October 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
