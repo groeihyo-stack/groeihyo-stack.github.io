@@ -1,0 +1,208 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gongju Half-Day Route</title>
+<meta name="description" content="A half-day route to Gongsanseong Fortress in Gongju, a UNESCO-listed royal fortress from Seoul, plus six places to eat and sit within a short walk.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@400;600;700&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@500;600&amp;display=swap">
+<style>
+  :root {
+    --paper: #F5F6F1; --surface: #FFFFFF; --ink: #10322C; --ink-soft: #55665F; --ink-faint: #86948D;
+    --rule: #DDE2DA; --rule-strong: #C3CCC1; --accent: #B8791A; --accent-soft: #F6EBD6; --seal: #0E4E43;
+    --display: "Hahmlet", "Nanum Myeongjo", Georgia, serif;
+    --body: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+  }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+    --paper: #0F1512; --surface: #18201C; --ink: #E7EBE3; --ink-soft: #A5B2AA; --ink-faint: #7B8A82;
+    --rule: #2A342E; --rule-strong: #3B4740; --accent: #E0A945; --accent-soft: #2A2317; --seal: #6FBFAE; } }
+  :root[data-theme="dark"] {
+    --paper: #0F1512; --surface: #18201C; --ink: #E7EBE3; --ink-soft: #A5B2AA; --ink-faint: #7B8A82;
+    --rule: #2A342E; --rule-strong: #3B4740; --accent: #E0A945; --accent-soft: #2A2317; --seal: #6FBFAE; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 17px; line-height: 1.7; -webkit-text-size-adjust: 100%; }
+  .sheet { max-width: 660px; margin: 0 auto; padding: 40px 22px 72px; }
+  @media (max-width: 480px) { .sheet { padding-left: 16px; padding-right: 16px; } }
+  header { padding-bottom: 26px; border-bottom: 2px solid var(--ink); }
+  .eyebrow { font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: 0.14em; color: var(--accent); margin: 0 0 14px; text-transform: uppercase; }
+  h1 { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 7.4vw, 42px); line-height: 1.24; letter-spacing: -0.015em; margin: 0 0 14px; text-wrap: balance; }
+  .lede { margin: 0; font-size: 17px; color: var(--ink-soft); max-width: 46ch; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 20px; font-family: var(--mono); font-size: 12.5px; color: var(--ink-faint); }
+  .meta span { display: inline-flex; align-items: center; gap: 7px; }
+  .meta span::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--rule-strong); flex: none; }
+  section { padding: 34px 0 6px; }
+  h2 { font-family: var(--display); font-size: clamp(22px, 4.8vw, 27px); font-weight: 600; line-height: 1.34; margin: 0 0 14px; letter-spacing: -0.01em; text-wrap: balance; }
+  h2 .tag { display: block; font-family: var(--mono); font-size: 12px; font-weight: 600; letter-spacing: 0.12em; color: var(--ink-faint); margin-bottom: 8px; text-transform: uppercase; }
+  p { margin: 0 0 14px; }
+  strong { font-weight: 600; color: var(--ink); }
+  a { color: var(--seal); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .facts { margin: 6px 0 0; padding: 20px 22px; background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid var(--seal); }
+  .facts dl { margin: 0; display: grid; gap: 14px; }
+  .facts dt { font-family: var(--mono); font-size: 11.5px; font-weight: 600; letter-spacing: 0.1em; color: var(--ink-faint); text-transform: uppercase; margin-bottom: 2px; }
+  .facts dd { margin: 0; font-size: 15.5px; color: var(--ink-soft); line-height: 1.6; }
+  .opts { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+  .opts li { padding: 16px 18px; background: var(--surface); border: 1px solid var(--rule); font-size: 15.5px; color: var(--ink-soft); line-height: 1.62; }
+  .opts li strong { display: block; font-family: var(--display); font-size: 17.5px; margin-bottom: 4px; }
+  .steps { list-style: none; margin: 0; padding: 0; display: grid; }
+  .step { padding: 20px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: auto 1fr; gap: 16px; }
+  .step:last-child { border-bottom: none; }
+  .num { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--surface); background: var(--seal); width: 30px; height: 30px; display: grid; place-items: center; margin-top: 3px; }
+  .step h3 { font-family: var(--display); font-size: 19px; font-weight: 600; margin: 0 0 2px; line-height: 1.36; }
+  .time { display: inline-block; margin: 2px 0 8px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; color: var(--accent); background: var(--accent-soft); padding: 2px 8px; }
+  .step p { margin: 0; font-size: 15.5px; color: var(--ink-soft); line-height: 1.62; }
+  .card { margin: 0 0 18px; padding: 22px 22px 20px; background: var(--surface); border: 1px solid var(--rule); border-top: 3px solid var(--seal); }
+  .card .kicker { font-family: var(--mono); font-size: 11.5px; font-weight: 600; letter-spacing: 0.1em; color: var(--accent); text-transform: uppercase; margin: 0 0 8px; }
+  .card h3 { font-family: var(--display); font-size: 22px; font-weight: 700; line-height: 1.3; margin: 0 0 2px; letter-spacing: -0.01em; }
+  .card .ko { font-family: var(--mono); font-size: 13px; color: var(--ink-faint); margin: 0 0 4px; }
+  .card .walk { display: inline-block; margin: 8px 0 12px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; color: var(--accent); background: var(--accent-soft); padding: 2px 8px; }
+  .card p { font-size: 15.5px; color: var(--ink-soft); line-height: 1.64; }
+  .good { margin: 14px 0 14px; padding: 12px 14px; background: var(--paper); border: 1px solid var(--rule); font-size: 14.5px; line-height: 1.6; color: var(--ink-soft); }
+  .good b { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; color: var(--seal); margin-bottom: 4px; font-weight: 600; text-transform: uppercase; }
+  .maplink { display: inline-block; font-family: var(--mono); font-size: 13px; font-weight: 600; }
+  .addon { border-top-color: var(--accent); }
+  .finish { margin-top: 38px; padding: 26px 24px; background: var(--seal); color: #F5F6F1; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .finish { background: #123F37; color: #E7EBE3; } }
+  :root[data-theme="dark"] .finish { background: #123F37; color: #E7EBE3; }
+  .finish h2 { font-size: 22px; margin: 0 0 10px; }
+  .finish p { margin: 0; font-size: 15.5px; opacity: 0.9; line-height: 1.66; }
+  .btn { display: inline-block; margin-top: 18px; padding: 12px 20px; background: #F5F6F1; color: #0E4E43; font-family: var(--mono); font-size: 14px; font-weight: 600; text-decoration: none; }
+  .finish .alt { margin-top: 16px; padding-top: 14px; border-top: 1px solid rgba(245, 246, 241, 0.22); font-family: var(--mono); font-size: 13.5px; opacity: 1; }
+  .finish .alt a { color: inherit; }
+  footer { margin-top: 26px; font-size: 13px; color: var(--ink-faint); line-height: 1.6; }
+</style></head><body>
+<div class="sheet">
+  <header>
+    <p class="eyebrow">Chungnam · Baekje Historic Areas</p>
+    <h1>Gongsanseong Fortress, Gongju</h1>
+    <p class="lede">A UNESCO-listed royal fortress on a river ridge, a half-day from Seoul, with the town's most-reviewed lunch spots and its chestnut pastry within a five-minute walk of the gate.</p>
+    <div class="meta"><span>UNESCO 2015</span><span>Historic Site No. 12</span><span>Walls 9:00–18:00 (Mar–Oct)</span></div>
+  </header>
+
+  <section id="why">
+    <h2><span class="tag">Why go</span>The capital of an old Korean kingdom, still walkable</h2>
+    <p>From 475 to 538, Gongju was the royal capital of the Baekje kingdom, known as Ungjin Baekje. Gongsanseong was its royal fortress, an earthen wall built along the ridges and valleys of a hill at about 110 m elevation beside the Geum River. In the Joseon era it was rebuilt in stone.</p>
+    <p>You walk the top of the wall itself. From the ramparts the whole town of Gongju lies in view below you.</p>
+    <p>The main entrance is Geumseoru, the west gate. A guard-changing ceremony is held there; the schedule is posted on the <a href="http://www.gongju.go.kr/prog/tursmCn/tour/sub02_01_04/view.do?cntno=14" target="_blank" rel="noopener">Gongju city site</a>.</p>
+    <p>In 2015 UNESCO listed the <a href="https://whc.unesco.org/en/list/1477" target="_blank" rel="noopener">Baekje Historic Areas</a>: eight sites across three towns (two in Gongju, four in Buyeo, two in Iksan). Gongju's two are this fortress and the Royal Tombs in Songsan-ri.</p>
+  </section>
+
+  <section id="know">
+    <h2><span class="tag">Know before you go</span>The practical facts</h2>
+    <div class="facts"><dl>
+      <div><dt>Hours</dt><dd>Mar–Oct 9:00–18:00. Nov–Feb 9:00–17:00. Last entry is 30 minutes before closing. Closed on New Year's Day and on the main day of Seollal (Lunar New Year) and Chuseok.</dd></div>
+      <div><dt>Admission</dt><dd>Small admission fee (see city site).</dd></div>
+      <div><dt>Parking</dt><dd>Free.</dd></div>
+      <div><dt>By city bus</dt><dd>Bus 101 or 125 from Gongju Bus Terminal.</dd></div>
+      <div><dt>Address and phone</dt><dd>280 Ungjin-ro, Gongju-si, Chungcheongnam-do. 041-856-7700.</dd></div>
+      <div><dt>On Google Maps</dt><dd><a href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJJ5tjA3-3ejUR-AmQcead1_A" target="_blank" rel="noopener">Gongsanseong Fortress</a>: 4.5 from 1,650 reviews.</dd></div>
+    </dl></div>
+  </section>
+
+  <section id="getting-there">
+    <h2><span class="tag">Getting there from Seoul</span>Three links to plan the trip</h2>
+    <p>Check the operators' own timetables for travel times.</p>
+    <ul class="opts">
+      <li><strong>Express or intercity bus</strong>Seoul to Gongju Bus Terminal. Book express buses at <a href="https://www.kobus.co.kr" target="_blank" rel="noopener">kobus.co.kr</a> and intercity buses at <a href="https://txbus.t-money.co.kr" target="_blank" rel="noopener">txbus.t-money.co.kr</a>.</li>
+      <li><strong>KTX to Gongju Station</strong>Book at <a href="https://www.letskorail.com" target="_blank" rel="noopener">letskorail.com</a>. Gongju Station is outside the town, so take a taxi or a local bus into town.</li>
+      <li><strong>Terminal to the fortress</strong>From Gongju Bus Terminal, take city bus 101 or 125.</li>
+    </ul>
+  </section>
+
+  <section id="plan">
+    <h2><span class="tag">A half-day plan</span>Walls, lunch, chestnuts, market</h2>
+    <p>A suggested order, with times as rough guides.</p>
+    <ol class="steps">
+      <li class="step"><div class="num">01</div><div><h3>Enter at Geumseoru and walk the walls</h3><div class="time">About 10:00 · 1.5–2 hours</div><p>Follow the wall around the fortress. Expect some climbing up and down.</p></div></li>
+      <li class="step"><div class="num">02</div><div><h3>Lunch</h3><div class="time">About 12:00</div><p>Pick one of three: Maehyang Makguksu, Sijang Jeongyukjeom Sikdang or Gomanaru 1999. All three are within about five minutes of the gate.</p></div></li>
+      <li class="step"><div class="num">03</div><div><h3>Chestnut pie or coffee</h3><div class="time">About 13:30</div><p>Bakery Bammaeul for the chestnut pie, or Gongdabang for coffee with the wall in view.</p></div></li>
+      <li class="step"><div class="num">04</div><div><h3>Stroll Sanseong Market</h3><div class="time">About 14:30</div><p>A traditional market about 12 minutes on foot from the gate.</p></div></li>
+      <li class="step"><div class="num">05</div><div><h3>Optional: Royal Tombs, then the walls after dark</h3><div class="time">Add-on</div><p>See the add-on below for the tombs. Two reviewers say the walls look good once they are lit after sunset.</p></div></li>
+    </ol>
+  </section>
+
+  <section id="eat">
+    <h2><span class="tag">Where to eat and sit</span>Six places within a short walk</h2>
+    <p>Each is within about a 15-minute walk of Geumseoru, has 100+ Google reviews, and does something different from the others. Distances are approximate. What we describe below is what Korean reviewers say again and again.</p>
+
+    <article class="card">
+      <p class="kicker">Buckwheat noodles</p>
+      <h3>Maehyang Makguksu</h3>
+      <p class="ko">매향 막국수</p>
+      <span class="walk">About 300 m · 5 min walk from the gate</span>
+      <p><strong>Why go.</strong> Reviewers say the noodles are 100% buckwheat, ground in-house. Reviewers keep coming back to one combo: bibim makguksu (spicy mixed noodles) with pyeonyuk-muchim, thin slices of boiled beef tossed in perilla oil. Perilla-oil makguksu and pyeongyang naengmyeon are also on the menu.</p>
+      <div class="good"><b>Good to know</b>Mon, Wed–Fri 11:00–15:00; Sat–Sun 10:30–15:00; closed Tuesday. Order on a tablet and pay up front. Weekends and holidays see a line before opening, though reviewers say it moves quickly. A few reviewers say weekday lines are short.</div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJl-N4aiu4ejURcSKDmz0NRgA" target="_blank" rel="noopener">Open in Google Maps · 1,055 reviews, 4.3</a>
+    </article>
+
+    <article class="card">
+      <p class="kicker">Beef tartare bibimbap</p>
+      <h3>Sijang Jeongyukjeom Sikdang</h3>
+      <p class="ko">시장정육점식당</p>
+      <span class="walk">About 330 m · 5 min walk from the gate</span>
+      <p><strong>Why go.</strong> The menu is effectively one dish: yukhoe bibimbap made with raw Korean beef and shredded raw Gongju chestnut. Reviewers repeatedly mention the crunch of the chestnut. A bowl of seonji-guk (beef blood soup) comes alongside. Reviewers say food arrives quickly after you order, and Korean reviewers note it was featured on a TV food show.</p>
+      <div class="good"><b>Good to know</b>Wed–Sun 11:00–15:00 and 17:00–20:00; closed Monday and Tuesday. The dish includes cucumber, so say so in advance if you don't want it. You take your shoes off to go in.</div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ_XOYESu4ejURWMB8TLCQ7ec" target="_blank" rel="noopener">Open in Google Maps · 743 reviews, 4.3</a>
+    </article>
+
+    <article class="card">
+      <p class="kicker">Korean set meal</p>
+      <h3>Gomanaru 1999</h3>
+      <p class="ko">고마나루1999</p>
+      <span class="walk">About 200 m · 3 min walk from the gate</span>
+      <p><strong>Why go.</strong> One set menu, the Gomanaru jeongsik: pot rice, grilled hwangtae (dried pollack), boiled pork, spicy stir-fried pork and side dishes. Reviewers say the leafy greens and side dishes at the self-serve bar are refillable. It sits directly across from the fortress, and reviewers mention seeing the fortress through the windows. Many describe a clean interior and a place for family meals.</p>
+      <div class="good"><b>Good to know</b>Open daily 11:00–21:00. Reviewers report waits at weekend lunch and say weekend reservations are not possible.</div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJ7YAdJyu4ejURVEGiC3d2WfE" target="_blank" rel="noopener">Open in Google Maps · 397 reviews, 4.1</a>
+    </article>
+
+    <article class="card">
+      <p class="kicker">Chestnut pastry</p>
+      <h3>Bakery Bammaeul (Chestnut Town)</h3>
+      <p class="ko">베이커리 밤마을</p>
+      <span class="walk">About 180 m · 3 min walk from the gate</span>
+      <p><strong>Why go.</strong> Gongju is chestnut country: the city site lists a chestnut festival and a chestnut industry expo, and reviewers call chestnuts a local specialty. The bakery's signature is the bam pie, a crisp pastry with a whole Gongju chestnut inside, and reviewers also keep mentioning the chestnut eclair. Reviewers say you can see the fortress from the second-floor window seats.</p>
+      <div class="good"><b>Good to know</b>Open daily 9:00–21:00. Weekend lines get long, but reviewers say they clear fast because many customers take away. Some reviewers say they buy it as gifts.</div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJFbc4Jyu4ejURr4SpOP8eK5w" target="_blank" rel="noopener">Open in Google Maps · 1,092 reviews, 4.2</a>
+    </article>
+
+    <article class="card">
+      <p class="kicker">Café</p>
+      <h3>Gongdabang</h3>
+      <p class="ko">공다방</p>
+      <span class="walk">About 160 m · 2 min walk from the gate</span>
+      <p><strong>Why go.</strong> It faces the fortress entrance, and reviewers say its floor-to-ceiling windows frame Geumseoru and the wall. Many also mention the modern interior. A couple of reviewers say the wall looks good from here once the lights come on after dark.</p>
+      <div class="good"><b>Good to know</b>Tue–Fri and Sun 11:00–21:00; Sat 11:00–22:00; closed Monday. Reviewers say the window seats are few and fill quickly.</div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJj2Kdjy65ejURXEkgkkTprCE" target="_blank" rel="noopener">Open in Google Maps · 213 reviews, 4.4</a>
+    </article>
+
+    <article class="card">
+      <p class="kicker">Traditional market</p>
+      <h3>Gongju Sanseong Traditional Market</h3>
+      <p class="ko">공주 산성시장</p>
+      <span class="walk">About 760 m · 12 min walk from the gate</span>
+      <p><strong>Why go.</strong> A traditional market a walk south of the fortress. Reviewers mention chestnut snacks, Korean street snacks and small restaurants. Reviewers also mention a five-day market and a summer evening night market.</p>
+      <div class="good"><b>Good to know</b>Open daily 6:00–20:00 on Google Maps; a couple of reviewers say the restaurants tend to close in the early evening. The five-day market is said to fall on days ending in 1 and 6. The summer night market is said to run on Friday and Saturday evenings; it changes from year to year, so check locally.</div>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=Google&amp;query_place_id=ChIJZcaWXda5ejURzISmO9zjeOE" target="_blank" rel="noopener">Open in Google Maps · 2,601 reviews, 4.0</a>
+    </article>
+  </section>
+
+  <section id="addon">
+    <h2><span class="tag">Add-on</span>Royal Tombs in Songsan-ri</h2>
+    <article class="card addon">
+      <p class="kicker">Gongju's other UNESCO site</p>
+      <h3>Royal Tombs in Songsan-ri</h3>
+      <p class="ko">무령왕릉과 왕릉원</p>
+      <p>The Tomb of King Muryeong is the only royal tomb from Korea's Three Kingdoms period whose occupant is positively identified. It was excavated in 1971.</p>
+      <div class="good"><b>Good to know</b>Same hours as the fortress. Free parking. By city bus 101 or 125 from Gongju Bus Terminal, get off at Gongju Culture Center. From the fortress it is a short taxi ride or about a 30-minute walk.</div>
+      <a class="maplink" href="http://www.gongju.go.kr/prog/tursmCn/tour/sub02_01_04/view.do?cntno=16" target="_blank" rel="noopener">Gongju city site page</a>
+    </article>
+  </section>
+
+  <div class="finish">
+    <h2>Want the full Gongju &amp; Buyeo guidebook?</h2>
+    <p>A longer guide to Gongju and Buyeo, the two Baekje capital towns. Email us to ask for it.</p>
+    <a class="btn" href="mailto:groeihyo@gmail.com?subject=Gongju%20guidebook" target="_blank" rel="noopener">Send me the guidebook</a>
+    <div class="alt"><a href="https://instagram.com/gonzo_travel_korea" target="_blank" rel="noopener">@gonzo_travel_korea on Instagram</a></div>
+  </div>
+
+  <footer>Opening hours and review counts from Google Maps and the Gongju city site, checked 7 Oct 2026. Nothing here is sponsored.</footer>
+</div>
+</body></html>
